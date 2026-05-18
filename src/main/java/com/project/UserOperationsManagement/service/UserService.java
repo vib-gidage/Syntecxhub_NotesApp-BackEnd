@@ -12,11 +12,7 @@ import com.project.UserOperationsManagement.Repository.UserRepository;
 public class UserService {
 	
 	@Autowired
-	private UserRepository userrepository;
-
-	public void registerUser(List<User> users) {
-	    userrepository.saveAll(users);
-	}
+	private UserRepository userrepository;       
 
 	public List<User> getAllUsers() {
 	    return userrepository.findAll();

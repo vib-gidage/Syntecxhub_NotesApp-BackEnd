@@ -1,4 +1,4 @@
-package com.project.UserOperationsManagement.Entity;
+ package com.project.UserOperationsManagement.Entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -55,6 +55,7 @@ public class User {
 			this.name = name;
 			this.age = age;
 		}
+		
 		public int getUserId() {
 			return userId;
 		}

@@ -1,19 +1,16 @@
 package com.project.UserOperationsManagement.Repository;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import com.project.UserOperationsManagement.Entity.Note;
 import com.project.UserOperationsManagement.Entity.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Integer> {
+public interface NoteRepository extends JpaRepository<Note, Long> {
 
-	Optional<User> findByEmail(String email);
-	}
+	List<Note> findByUser(User user);
 
-
-
-
-
+}

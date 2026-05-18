@@ -8,7 +8,7 @@ public class UserOperationsManagementApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserOperationsManagementApplication.class, args);
-		System.err.println("Application started..");
+		System.err.println(" User Application started..");
 	}
 
 }
